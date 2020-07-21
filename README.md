@@ -1,1 +1,1 @@
-# Stepik---Python_Automatization-Module_6---Homework
+# Stepik---Python_Automation-Module_6---Homework
