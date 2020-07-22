@@ -26,6 +26,7 @@ class TestUserAddToBasketFromProductPage():
         link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
         page = ProductPage(browser, link)
         page.open()
+        # !!! нужно добавить авторизацию пользователя
         # Проверяем, что нет сообщения об успехе с помощью is_not_element_present
         page.should_not_be_success_message()
 
@@ -34,6 +35,7 @@ class TestUserAddToBasketFromProductPage():
         link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
         page = ProductPage(browser, link)
         page.open()
+        # !!! нужно добавить авторизацию пользователя
         page.add_to_basket_btn_click()
         page.should_be_added_product_to_basket()
 

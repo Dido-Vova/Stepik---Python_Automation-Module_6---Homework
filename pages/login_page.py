@@ -29,3 +29,4 @@ class LoginPage(BasePage):
     def find_field_and_input_value(self, how, what, value):
         field = self.browser.find_element(how, what)
         field.send_keys(value)
+

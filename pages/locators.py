@@ -5,6 +5,8 @@ class BasePageLocators ():
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     BASKET_BTN = (By.CSS_SELECTOR, "span>a")
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+    LOGOUT_LINK = (By.ID, "logout_link")
+
 
 class MainPageLocators():
     EMPTY_TEMP = None
@@ -16,6 +18,7 @@ class LoginPageLocators():
     REGISTER_FORM_PASSWORD_FIELD = (By.ID, 'id_registration-password1')
     REGISTER_FORM_REPEAT_PASSWORD_FIELD = (By.ID, 'id_registration-password2')
     REGISTER_FORM_SUBMIT_BTN = (By.NAME, 'registration_submit')
+    ERROR_MESSAGE_SIGN = (By.CSS_SELECTOR, "#register_form .icon-exclamation-sign")
 
 class ProductPageLocators():
     ADD_TO_BASKET_BTN = (By.CSS_SELECTOR, "button.btn-add-to-basket")
