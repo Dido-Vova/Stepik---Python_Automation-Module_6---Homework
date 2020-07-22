@@ -23,8 +23,9 @@ def test_register_new_user_using_existing_email(browser):
     password = "12345qwertASDFG"
     page.register_new_user(login, password)
     page.should_be_authorized_user()
-    # browser.quit() #почему-то появляется ошибка Failed to establish a new connection: [WinError 10061] Подключение не установлено
-    # , т.к. конечный компьютер отверг запрос на подключение'))
+    # browser.quit() #почему-то после этой команды не могу открывать страницу заново,
+    # появляется ошибка Failed to establish a new connection: [WinError 10061] Подключение не установлено
+    # , т.к. конечный компьютер отверг запрос на подключение')). Разобраться
     page.click_the_logout_button()
     #Try register using existing email
     browser.get(link)
