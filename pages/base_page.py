@@ -16,6 +16,11 @@ class BasePage():
     def open(self):
         self.browser.get(self.url)
 
+    def reopen(self):
+        self.browser.close()
+        self.browser.start_session({})
+        self.browser.get(self.url)
+
     def is_element_present(self, how, what):
         try:
             self.browser.find_element(how, what)
@@ -91,3 +96,6 @@ class BasePage():
             alert.accept()
         except NoAlertPresentException:
             print("No second alert presented")
+
+    def unique_mail_and_password(self):
+        pass
